@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".InterfazElegirEjercicio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imgTituloInterfaz1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:srcCompat="@drawable/imgtitulo1interfaz" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBotonPecho"
+                    android:layout_width="292dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="44dp"
+                    android:layout_marginTop="8dp"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#000000"
+                    android:onClick="botonPecho"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgbotonpecho" />
+
+                <ImageButton
+                    android:id="@+id/imgBotonAyudaPecho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:backgroundTint="#7092BE"
+                    android:onClick="botonAyudaPecho"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBotonAbdominales"
+                    android:layout_width="292dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="44dp"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#000000"
+                    android:onClick="botonAbdominales"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgbotonabdominales" />
+
+                <ImageButton
+                    android:id="@+id/imgBotonAyudaAbdominales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:backgroundTint="#7092BE"
+                    android:onClick="botonAyudaAbdominales"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgBotonAyudaPiernas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBotonPiernas"
+                    android:layout_width="292dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="44dp"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#000000"
+                    android:onClick="botonPiernas"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgbotonpiernas" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:backgroundTint="#7092BE"
+                    android:onClick="botonAyudaPiernas"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBotonBrazos"
+                    android:layout_width="292dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="44dp"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="#000000"
+                    android:onClick="botonBrazos"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/imgbotonbrazos" />
+
+                <ImageButton
+                    android:id="@+id/imgBotonAyudaBrazos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:backgroundTint="#7092BE"
+                    android:onClick="botonAyudaBrazos"
+                    app:srcCompat="@android:drawable/ic_menu_help" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imgBotonVolverDesdeInterfaz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="botonInterfazEjerciciosParaLlegarAtras"
+                    app:srcCompat="@android:drawable/ic_menu_revert" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

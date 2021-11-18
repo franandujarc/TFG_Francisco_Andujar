@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".EntradaAnimacion">
+
+    <ImageView
+        android:id="@+id/imgTituloEntrada1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/imgtituloentrada1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTituloEntrada2"
+        android:layout_width="326dp"
+        android:layout_height="63dp"
+        android:alpha="0"
+        android:src="@drawable/imgtituloentrada2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada1" />
+
+    <ImageView
+        android:id="@+id/imgEspartanoGymEntrada"
+        android:layout_width="215dp"
+        android:layout_height="254dp"
+        android:alpha="0"
+        android:src="@drawable/imgespartanogymentrada"
+        app:layout_constraintEnd_toStartOf="@+id/imgEspadaEntrada2"
+        app:layout_constraintStart_toEndOf="@+id/imgEspadaEntrada1"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada2" />
+
+    <ImageView
+        android:id="@+id/imgEspadaEntrada2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:src="@drawable/imgespadaentrada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada2" />
+
+    <ImageView
+        android:id="@+id/imgEspadaEntrada1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:alpha="0"
+        android:src="@drawable/imgespadaentrada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada2" />
+
+    <Button
+        android:id="@+id/botonEntradaComienzo"
+        android:layout_width="227dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        android:background="#FF0000"
+        android:text="Comenzar"
+        android:textColor="#000000"
+        android:onClick="botonEmpezarParaLlegarInterfazEjercicios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgEspartanoGymEntrada"
+        app:layout_constraintVertical_bias="0.052" />
+</androidx.constraintlayout.widget.ConstraintLayout>

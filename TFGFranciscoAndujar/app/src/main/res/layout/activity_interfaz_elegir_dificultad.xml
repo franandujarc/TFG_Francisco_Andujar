@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".InterfazElegirDificultad">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="393dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/imgtitulo1dificultad" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="292dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#000000"
+        android:onClick="botonInterfazDificultadParaLlegarVisualizadorDeLosEjerciciosFacil"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/imgbotoninterfazdificultadfacil" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="292dp"
+        android:layout_height="114dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#000000"
+        android:onClick="botonInterfazDificultadParaLlegarVisualizadorDeLosEjerciciosNormal"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:srcCompat="@drawable/imgbotoninterfazdificultadnormal" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="292dp"
+        android:layout_height="114dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#000000"
+        android:onClick="botonInterfazDificultadParaLlegarVisualizadorDeLosEjerciciosDificil"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:srcCompat="@drawable/imgbotoninterfazdificultaddificil" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="476dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="44dp"
+        android:onClick="botonInterfazDificultadParaLlegarAtras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+</androidx.constraintlayout.widget.ConstraintLayout>
