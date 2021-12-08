@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".EntradaAnimada">
+
+    <ImageView
+        android:id="@+id/imgTituloEntrada1"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:alpha="0"
+        android:src="@drawable/imgtituloentrada1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTituloEntrada2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:alpha="0"
+        android:src="@drawable/imgtituloentrada2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada1" />
+
+    <ImageButton
+        android:id="@+id/imgBotonEspartanoGymEntrada"
+        android:layout_width="wrap_content"
+        android:layout_height="381dp"
+        android:alpha="0"
+        android:backgroundTint="#000000"
+        android:onClick="botonEmpezarParaLlegarInterfazEjercicios"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTituloEntrada2"
+        app:srcCompat="@drawable/imgespartanogym" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

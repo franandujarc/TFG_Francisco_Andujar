@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:foregroundTint="#ED2424"
+    android:orientation="vertical"
+    tools:context=".HistorialEjercicios">
+
+    <ImageView
+        android:id="@+id/imgTituloMotivadorHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        app:srcCompat="@drawable/imghistorialtitulo" />
+
+    <Button
+        android:id="@+id/botonVolverHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#554E4E"
+        android:drawableTint="#BC3838"
+        android:onClick="botonVolverAInterfazElegirEjercicio"
+        android:text="Volver Al menu de ejercicios"
+        android:textColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</LinearLayout>
